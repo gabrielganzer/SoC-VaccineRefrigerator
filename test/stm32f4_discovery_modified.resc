@@ -1,0 +1,31 @@
+:name: STM32F4 Discovery
+:description: This script runs Contiki on STM32F4 Discovery.
+
+$name?="STM32F4_Discovery"
+mach create $name
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery-kit.repl
+machine LoadPlatformDescription @/Users/gabrielganzer/Documents/PlatformIO/Projects/soc_arch_vare/sensors.repl
+using sysbus
+emulation CreateEnvironment "envA"
+emulation CreateEnvironment "envB"
+envA Temperature -1
+envB Temperature -1
+sysbus.i2c1.tempA SetEnvironment envA
+sysbus.i2c1.tempB SetEnvironment envB
+showAnalyzer sysbus.uart2
+sysbus.gpioPortA.sensorOC Press
+logLevel -1 sysbus.gpioPortB.CoolSys
+logLevel -1 sysbus.gpioPortB.AlarmDoor
+logLevel 3
+
+
+$bin?="/Users/gabrielganzer/Documents/PlatformIO/Projects/soc_arch_vare/.pio/build/disco_f407vg/firmware.elf"
+
+macro reset
+"""
+
+    sysbus LoadELF $bin
+
+"""
+
+runMacro $reset
