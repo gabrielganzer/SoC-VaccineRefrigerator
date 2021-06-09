@@ -1,7 +1,6 @@
 # SoC-VaccineRefrigerator
 [![SHIELDS](https://img.shields.io/badge/development-completed-green)](https://shields.io/)
 
-Vaccine Refrigerator (VARE) project presented to the System-on-Chip Architectures 20/21 course at Politecnico di Torino.
 Authors: Coralie Allioux, Gabriel Ganzer.
 
 Vaccination is a safe and effective way to prevent disease and save lives. Due to their composition, many vaccines must be stored at stable low temperatures after manufacture to avoid degradation. This can be a particular challenge in developing countries with rudimentary health care systems. For this reason, we present VARE, a low-cost vaccine refrigeration system that can be used to adapt a domestic fridge into aspecialized medical one
