@@ -3,7 +3,7 @@
 
 Authors: Coralie Allioux, Gabriel Ganzer.
 
-Vaccination is a safe and effective way to prevent disease and save lives. Due to their composition, many vaccines must be stored at stable low temperatures after manufacture to avoid degradation. This can be a particular challenge in developing countries with rudimentary health care systems. For this reason, we present VARE, a low-cost vaccine refrigeration system that can be used to adapt a domestic fridge into aspecialized medical one
+Vaccination is a safe and effective way to prevent disease and save lives. Due to their composition, many vaccines must be stored at stable low temperatures after manufacture to avoid degradation. This can be a particular challenge in developing countries with rudimentary health care systems. For this reason, we present VARE, a low-cost vaccine refrigeration system that can be used to adapt a domestic fridge into a specialized medical one.
 
 VARE is composed of the followings components:
 - *UART2* for displaying messages to the user;
